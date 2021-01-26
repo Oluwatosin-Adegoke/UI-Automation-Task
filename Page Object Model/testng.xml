@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/w10/Documents/Automation_Task/UI_Automation_Task/Page Object Model">
+        <classes>
+            <class name="Setup.DashboardPageTest">
+                <methods>
+                    <include name="testsuccessfullogout"/>
+                </methods>
+            </class>
+            <class name="Setup.SetupTest">
+                <methods>
+                    <include name="testSetup"/>
+                </methods>
+            </class>
+            <class name="Setup.SigninPageTest">
+                <methods>
+                    <include name="VerifysuccessfulSignin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
