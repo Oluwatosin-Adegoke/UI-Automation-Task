@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Konga_POM">
+        <classes>
+            <class name="SetUp.DashboardPageTest">
+                <methods>
+                    <include name="testLoginPopup"/>
+                    <include name="assertPageURL"/>
+                    <include name="assertName"/>
+                    <include name="getPageTitle"/>
+                    <include name="assert5Items"/>
+                    <include name="clickLogout"/>
+                </methods>
+            </class>
+            <class name="SetUp.SetUpTest">
+                <methods>
+                    <include name="testSignInPage"/>
+                </methods>
+            </class>
+            <class name="SetUp.SignInpageTest">
+                <methods>
+                    <include name="VerifyURL"/>
+                    <include name="verifyPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
